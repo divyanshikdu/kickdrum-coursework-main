@@ -1,0 +1,5 @@
+# IntelliJ / IDE files
+.idea/
+
+# Sonar workflow (do not track)
+.github/workflows/maven-sonar.yml
