@@ -1,0 +1,103 @@
+.contact {
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.contact-title span {
+  color: $primary;
+}
+
+.contact-subtitle {
+  color: gray;
+  margin-bottom: 30px;
+}
+
+//form box
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+//labels
+.contact-form label {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+}
+
+.contact-form label span {
+  color: red;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: $primary;
+}
+
+//textarea
+.contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+//radio groups
+.radio-group {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+
+.check-group {
+  font-size: 13px;
+  text-align: left;
+}
+
+.check-group a {
+  color: $primary;
+  text-decoration: none;
+}
+
+.check-group a:hover {
+  text-decoration: underline;
+}
+
+//button
+.contact-form button {
+  padding: 14px;
+  background: $primary;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.contact-form button:hover {
+  background: #1d4ed8;
+}

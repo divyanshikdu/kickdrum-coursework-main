@@ -1,0 +1,15 @@
+//body and section
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: $bg;
+  color: $text;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+h1, h2 {
+  margin: 0 0 20px;
+}

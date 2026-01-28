@@ -1,0 +1,137 @@
+// Courses Section Styling
+.courses {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.section-title span {
+  color: $primary;
+}
+
+.section-subtitle {
+  color: gray;
+  margin-top: 10px;
+}
+
+/* Grid Layout */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+/* Course Card */
+.course-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Image Fix */
+.course-img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.course-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 6px 14px;
+  font-size: 12px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.beginner {
+  background: #f59e0b;
+}
+
+.intermediate {
+  background: $primary;
+}
+
+.advanced {
+  background: $secondary;
+}
+
+/* Content */
+.course-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.course-content h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.course-content p {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* List */
+.course-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.course-content ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.course-content ul li::before {
+  content: "✓";
+  color: green;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Footer */
+.course-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: $text;
+}
+
+.course-footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: $primary;
+}
+
+.course-footer a:hover {
+  text-decoration: underline;
+}
