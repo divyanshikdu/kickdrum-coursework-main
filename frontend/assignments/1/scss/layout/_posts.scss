@@ -1,0 +1,69 @@
+.post-card {
+  padding: 25px;
+  border-bottom: 1px solid #2f3336;
+}
+
+.post-header {
+  display: flex;
+  gap: 15px;
+}
+
+.post-body h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.post-body span {
+  color: #71767b;
+}
+
+.post-body p {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+// .post-footer {
+//   margin-top: 20px;
+//   display: flex;
+//   gap: 10px;
+//   align-items: center;
+// }
+
+.like-post {
+  background: none;
+  border: none;
+}
+
+.likes-count {
+  color: #71767b;
+}
+
+.post-footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 320px;
+}
+
+.post-footer button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #71767b;
+}
+
+.post-footer img {
+  width: 18px;
+  opacity: 0.8;
+}
+
+.post-footer button:hover img {
+  opacity: 1;
+}
+
+.comment-section {
+  margin-top: 12px;
+}

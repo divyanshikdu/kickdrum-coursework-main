@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X Homepage Clone</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <div class="app-container">
+      <!--Mobile Profile Icon -->
+      <button class="profile-icon">
+        <img src="./assets/icons/profile-icon.svg" alt="profile" />
+      </button>
+
+      <!--Navigation -->
+      <nav class="navigation-section">
+        <!-- Mobile Header -->
+        <div class="mobile-header">
+          <img
+            src="./assets/images/profile pic.png"
+            class="mobile-avatar"
+            alt="user"
+          />
+          <button class="close-btn">+</button>
+        </div>
+
+        <div class="mobile-user">
+          <p class="name">Nitesh Gupta</p>
+          <p class="handle">@nit_hck</p>
+
+          <p class="follow">
+            <span><b>1</b> Following</span>
+            <span><b>0</b> Followers</span>
+          </p>
+        </div>
+
+        <!-- mobile Menu -->
+        <ul class="mobile-menu">
+          <li><img src="./assets/icons/profile-icon.svg" />Profile</li>
+          <li><img src="./assets/icons/premium-icon.svg" />Premium</li>
+          <li><img src="./assets/icons/list-icon.svg" />Lists</li>
+          <li><img src="./assets/icons/bookmark-icon.svg" />Bookmarks</li>
+          <li><img src="./assets/icons/community-icon.svg" />Communities</li>
+          <li><img src="./assets/icons/monetiation.svg" />Monetization</li>
+          <li><img src="./assets/icons/adds.svg" />Ads</li>
+          <li>
+            <img src="./assets/icons/settings-icon.svg" />
+            Settings and privacy
+          </li>
+          <li><img src="./assets/icons/logout-icon.svg" />Log out</li>
+        </ul>
+
+        <!--Desktop Sidebar -->
+        <div class="desktop-nav">
+          <!-- Logo -->
+          <div class="nav-logo">
+            <img src="./assets/icons/white-logo.png" alt="logo" />
+          </div>
+
+          <!-- Links -->
+          <ul class="nav-links">
+            <li><img src="./assets/icons/home.svg" />Home</li>
+            <li><img src="./assets/icons/search.svg" />Explore</li>
+            <li><img src="./assets/icons/notif-icon.svg" />Notifications</li>
+            <li><img src="./assets/icons/mail-icon.svg" />Messages</li>
+            <li><img src="./assets/icons/list-icon.svg" />Lists</li>
+            <li><img src="./assets/icons/bookmark-icon.svg" />Bookmarks</li>
+            <li><img src="./assets/icons/community-icon.svg" />Communities</li>
+            <li><img src="./assets/icons/premium-icon.svg" />Premium</li>
+            <li><img src="./assets/icons/profile-icon.svg" />Profile</li>
+            <li><img src="./assets/icons/more-icon.svg" />More</li>
+          </ul>
+
+          <!-- Post Button -->
+          <button class="nav-post-btn">Post</button>
+
+          <!-- Bottom Profile -->
+          <div class="nav-bottom">
+            <img src="./assets/icons/profile-icon.svg" alt="user" />
+            <div>
+              <p class="nav-name">Nitesh Gupta</p>
+              <p class="nav-handle">@nit_hck</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main class="main-content">
+
+<section class="tweet-box">
+
+  <div class="post-input">
+
+    <div class="tweet-avatar">N</div>
+
+    <div class="tweet-area">
+
+      <input
+        type="text"
+        id="tweetText"
+        placeholder="What is happening?!"
+      />
+
+      <div class="tweet-actions">
+
+        <div class="tweet-icons">
+          <img src="./assets/icons/gallery-icon.svg" />
+          <img src="./assets/icons/gif-icon.svg" />
+          <img src="./assets/icons/list-icon.svg" />
+          <img src="./assets/icons/smiley-icon.svg" />
+          <img src="./assets/icons/calendar-icon.svg" />
+          <img src="./assets/icons/location-icon.svg" />
+        </div>
+
+        <!-- Post Button -->
+        <button class="tweet-btn" id="postTweetBtn">
+          Post
+        </button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- Posts Feed -->
+<section class="posts" id="postsFeed">
+
+
+
+</section>
+
+
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
