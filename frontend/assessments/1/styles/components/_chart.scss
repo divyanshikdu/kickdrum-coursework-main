@@ -1,0 +1,48 @@
+
+
+@use "../abstracts/variables" as *;
+
+//chart container
+.chart {
+  flex: 1;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  position: relative;
+  flex-wrap: nowrap;
+}
+
+
+.bar {
+  width: 20px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: $buy-green;
+  position: relative;
+  z-index: 2;
+}
+
+.bar--down {
+  background: $sell-red;
+}
+
+
+.x-axis {
+  height: 30px;
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 10px;
+  font-size: 13px;
+  font-weight: 600;
+
+  border-top: 1px solid #999;
+  background: white;
+}

@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as *;
+
+.controls__input {
+  width: 140px;
+  padding: 8px;
+  border: 1px solid $border-color;
+  border-radius: $radius;
+}

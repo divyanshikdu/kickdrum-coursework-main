@@ -1,0 +1,67 @@
+
+@use "../abstracts/variables" as *;
+
+//to make history height full
+.history {
+  flex: 1;
+  border: 2px solid $border-color;
+  padding: 15px;
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.history__title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+
+.history__list {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+}
+//item card in history box
+.history__item {
+  width: 100%;
+  border: 1px solid $border-color;
+  border-radius: $radius;
+  padding: 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: white;
+}
+
+//buy sell
+.history__action {
+  min-width: 60px;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+}
+
+.history__action--bought {
+  background: $buy-green;
+}
+
+.history__action--sold {
+  background: $sell-red;
+}
+
+.history__text {
+  font-size: 14px;
+  font-weight: 500;
+}

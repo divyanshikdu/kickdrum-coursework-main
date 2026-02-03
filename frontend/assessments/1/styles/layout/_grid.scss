@@ -1,0 +1,47 @@
+
+.chart {
+  position: relative;
+  background-color: #fff;
+
+  background-image: repeating-linear-gradient(
+      to right,
+      transparent 0,
+      transparent 99px,
+      rgba(0, 0, 0, 0.15) 100px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 124px,
+      rgba(0, 0, 0, 0.15) 125px
+    );
+
+  background-size: 100px 125px;
+}
+.chart::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: repeating-linear-gradient(
+      to right,
+      transparent 0,
+      transparent 96px,
+      rgba(0, 0, 0, 0.25) 96px,
+      rgba(0, 0, 0, 0.25) 98px,
+      transparent 98px,
+      transparent 100px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 121px,
+      rgba(0, 0, 0, 0.25) 121px,
+      rgba(0, 0, 0, 0.25) 123px,
+      transparent 123px,
+      transparent 125px
+    );
+
+  opacity: 0.5;
+  pointer-events: none;
+}
