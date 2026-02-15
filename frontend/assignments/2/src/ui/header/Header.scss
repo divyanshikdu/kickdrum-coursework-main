@@ -1,0 +1,23 @@
+.header{
+    position: sticky;
+    top:0;
+    background-color: #1050be;
+    color: white;
+}
+.headertext{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+
+}
+.headertitle {
+  font-size: 20px;
+  font-weight: 600;
+}
+.headerphone {
+  font-size: 14px;
+}
