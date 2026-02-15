@@ -1,0 +1,30 @@
+.summary {
+  background: #eaf4ff;
+  padding: 16px;
+  border-radius: 6px;
+  width: 100%;
+  height: fit-content;
+  position:sticky;
+  top: 90px;
+//   border: 1px solid #d6e8ff;
+}
+
+.summarytitle {
+  background: #5aa9b4;
+  color: #ffffff;
+  padding: 14px;
+  margin: -16px -16px 16px -16px;
+  font-size: 18px;
+}
+
+.summarytotal {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+
+.summarytotal b {
+  color: #2a9df4;
+}

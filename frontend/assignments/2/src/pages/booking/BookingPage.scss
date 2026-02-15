@@ -1,0 +1,157 @@
+.booking{
+    padding: 20px;
+    background: #f5f5f5;
+    min-height: 100vh;
+}
+.bookingbox{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.bookingform{
+    flex: 1;
+    background: #eef6ff; 
+    padding: 20px;
+    border-radius: 8px;
+}
+.bookingsummary{
+    flex-shrink:0;
+    width: 300px;
+    background: white;
+    position: sticky;
+    top: 100px; 
+     align-self: flex-start;
+    padding: 20px;
+}   
+@media (max-width: 768px) {
+    .bookingbox{
+        flex-direction: column;
+    }
+}
+.bookingtitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.bookingoption{
+    margin-right: 20px;
+    display: inline-flex;
+    font-size: 14px;
+    align-items: center;
+}
+
+.bookingextras{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.bookingextras input{
+    margin-left: 8px;
+    padding: 4px 6px;
+}
+.bookingextras label {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+}
+.bookingtime{
+    margin-top:20px;
+}
+.bookingtimegrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 11px;
+}
+.bookingtimegrid button {
+  padding: 10px 0;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.bookingtimegrid button.active {
+  background: #0b3d91;
+  color: white;
+  border-color: #0b3d91;
+}
+.bookingpersonal{
+    display: flex;
+    gap:12px;
+    flex-direction: column;
+    margin-top: 13px;
+}
+.bookingpersonal label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.bookingpersonal input,.bookingpersonal textarea {
+  margin-top: 4px;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.payment{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+}
+.payment label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+.payment input {
+  margin-top: 4px;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.paymentrow {
+  display: flex;
+  gap: 12px;
+}
+.paymentrow label {
+  flex: 1;
+}
+.roomdetails {
+  margin-top: 15px;
+  gap: 20px;
+  display: flex;
+}
+.roomdetails label {
+  display: flex;
+  flex-direction: column;
+  flex: 1;     
+}
+.terms {
+  margin-top: 16px;
+  font-size: 13px;
+}
+
+.completeBtn {
+  width: 100%;
+  margin-top: 14px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #a0a0a0;
+  color: white;
+  font-size: 15px;
+  cursor: not-allowed;
+}
+
+.completeBtn:not(:disabled) {
+  background: #6ac259;
+  cursor: pointer;
+}
