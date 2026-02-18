@@ -1,0 +1,26 @@
+.registrationFormBox {
+  width: 314px;
+  padding: 18px 22px;
+  background: #c9c0c0;
+  border: 1px solid #e5e6e0;
+  border-radius: 7px;
+}
+.formField {
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+}
+input,select,textarea {
+  padding: 7px 9px;
+  border: 1px solid #919191;
+  border-radius: 3px;
+  font-size: 13px;
+}
+.submitButton {
+  padding: 9px 12px;
+  border: none;
+  background: #baffff;
+  color: rgb(255, 242, 242);
+  border-radius: 4px;
+  cursor: pointer;
+}
