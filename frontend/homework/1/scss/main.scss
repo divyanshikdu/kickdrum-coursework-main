@@ -1,0 +1,306 @@
+//basic page styling like body,section and headings
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9fafb;
+  color: #1f2937;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+h1, h2 {
+  margin: 0 0 20px;
+}
+.header {
+  background: white;
+  padding: 15px 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+// Navbar styles
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.logo1 {
+  color: #1f2937; /* black */
+}
+
+.logo2{
+  color: #2563eb; /* blue */
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+// Hero section layout
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text h2 {
+    font-family:'Times New Roman', Times, serif;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.hero-buttons button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.hero-buttons button:first-child {
+  background: #2563eb;
+  color: white;
+}
+
+.hero-buttons button:last-child {
+  background: white;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+
+// Features section cards
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+// Courses section layout
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.course-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  text-align: left;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
+// Stats section
+.stats {
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.stat-box {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+// Contact form styling
+.contact-form {
+  max-width: 500px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background: #1d4ed8;
+}
+// Footer styling
+.footer {
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+// responsive adjustments
+// @media (max-width: 768px) {
+//   .hero {
+//     grid-template-columns: 1fr;
+//     text-align: center;
+//   }
+
+//   .feature-grid,
+//   .course-grid {
+//     grid-template-columns: 1fr;
+//   }
+
+//   .stats {
+//     flex-direction: column;
+//     gap: 15px;
+//   }
+
+//   .navbar {
+//     flex-direction: column;
+//     gap: 10px;
+//   }
+
+//   .nav-links {
+//     flex-direction: column;
+//     gap: 8px;
+//   }
+// }
+
+
+// Responsive Design
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .feature-grid,
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+
+//course images
+.course-img {
+  position: relative;
+  width: 100%;
+  height: 200px; 
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+
+.course-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+//for feature
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+
+.price{
+    font-size: 18px;
+    font-weight: bold;
+    color: #111827;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+}
