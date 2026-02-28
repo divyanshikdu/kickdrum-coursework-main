@@ -1,0 +1,83 @@
+@use "../base/variables" as *;
+
+.navigation-section {
+  height: 100vh;
+  // padding: 20px;
+  border-right: 1px solid $border;
+  background: black;
+  width: 280px;
+  position: sticky;
+  top: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+.desktop-nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.nav-logo img {
+  width: 2rem;
+  margin-bottom: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+
+    img {
+      width: 1.3rem;
+    }
+  }
+}
+
+.nav-post-btn {
+  width: 220px;
+  padding: 14px;
+  border-radius: 30px;
+  background: #1d9bf0;
+  color: black;
+  font-weight: bold;
+  border: none;
+}
+
+
+.nav-bottom {
+  margin-top: auto;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  padding-top: 2rem;
+
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+
+.nav-name {
+  font-weight: bold;
+}
+
+.nav-handle {
+  font-size: 0.85rem;
+  color: $muted;
+}
+
+.mobile-header,
+.mobile-user,
+.mobile-menu {
+  display: none;
+}

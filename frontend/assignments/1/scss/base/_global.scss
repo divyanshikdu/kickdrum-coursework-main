@@ -1,0 +1,47 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+body {
+  background: $bg;
+  color: $text;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+    margin: 0;
+  padding: 0;
+
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 280px 1fr; //sidebar
+  min-height: 100vh;
+}
+
+.main-content {
+  max-width: 650px; //feed
+  width: 100%;
+  border-left: 1px solid #2f3336;
+  border-right: 1px solid #2f3336;
+}
+
+
+.tweet-avatar,
+.post-avatar,
+.mobile-avatar,
+.nav-bottom img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+//responsive
+@include mobile {
+  .app-container {
+    grid-template-columns: 1fr;
+  }
+
+  .main-content {
+    border: none;
+  }
+}
+
