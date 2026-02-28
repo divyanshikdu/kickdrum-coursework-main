@@ -1,0 +1,43 @@
+.details-container {
+  padding: 16px;
+}
+
+.details-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.details-main-image {
+  width: 100%;
+  max-width: 400px;
+}
+
+.details-info h1 {
+  margin-bottom: 12px;
+}
+
+.details-price {
+  color: #16a34a;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.details-gallery {
+  margin-top: 32px;
+  display: flex;
+  gap: 12px;
+}
+
+.details-gallery img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.details-images-title {
+  margin-top: 24px;
+}
