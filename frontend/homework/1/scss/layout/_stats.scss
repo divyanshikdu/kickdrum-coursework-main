@@ -1,0 +1,14 @@
+// Stats section
+.stats {
+  background: linear-gradient(90deg, $primary, $secondary);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.stat-box {
+  font-size: 18px;
+  font-weight: bold;
+}
