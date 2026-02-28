@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Counter</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			body {
+				font-family: system-ui, Arial, sans-serif;
+				margin: 2rem;
+			}
+			.box {
+				max-width: 420px;
+				padding: 1rem 1.25rem;
+				border: 1px solid #ddd;
+				border-radius: 12px;
+			}
+			.value {
+				font-size: 2rem;
+				font-weight: 700;
+			}
+			button {
+				padding: 0.6rem 1rem;
+				border-radius: 10px;
+				border: 1px solid #999;
+				background: #fff;
+				cursor: pointer;
+			}
+			.muted {
+				color: #666;
+			}
+			.err {
+				color: #b00020;
+				white-space: pre-wrap;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<h2>Serverless Counter</h2>
+			<p class="muted">API: <span id="api"></span></p>
+
+			<div class="muted">Current value</div>
+			<div class="value" id="value">—</div>
+
+			<p></p>
+			<button id="add">Add Counter</button>
+			<p class="err" id="err"></p>
+		</div>
+
+		<script>
+			const API_BASE = "__API_BASE__";
+			document.getElementById("api").textContent = API_BASE;
+
+			const valueEl = document.getElementById("value");
+			const errEl = document.getElementById("err");
+			const btn = document.getElementById("add");
+
+			async function refresh() {
+				errEl.textContent = "";
+				const res = await fetch(`${API_BASE}/counter`);
+				if (!res.ok) throw new Error(await res.text());
+				const data = await res.json();
+				valueEl.textContent = data.value;
+			}
+
+			async function add() {
+				errEl.textContent = "";
+				btn.disabled = true;
+				try {
+					const res = await fetch(`${API_BASE}/counter`, { method: "PUT" });
+					if (!res.ok) throw new Error(await res.text());
+					const data = await res.json();
+					valueEl.textContent = data.value;
+				} finally {
+					btn.disabled = false;
+				}
+			}
+
+			btn.addEventListener("click", () =>
+				add().catch((e) => (errEl.textContent = String(e))),
+			);
+			refresh().catch((e) => (errEl.textContent = String(e)));
+		</script>
+	</body>
+</html>
