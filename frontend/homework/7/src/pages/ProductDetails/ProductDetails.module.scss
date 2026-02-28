@@ -1,0 +1,30 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+.mainImage {
+  width: 100%;
+  max-width: 400px;
+}
+.info h1 {
+  margin-bottom: 12px;
+}
+.price {
+  color: #16a34a;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.gallery {
+  margin-top: 32px;
+  display: flex;
+  gap: 12px;
+}
+.gallery img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
