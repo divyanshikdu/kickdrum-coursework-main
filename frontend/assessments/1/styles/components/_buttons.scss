@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as *;
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: $radius;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+}
+
+.btn--buy {
+  background: $buy-green;
+}
+
+.btn--sell {
+  background: $sell-red;
+}
+.price-box {
+  margin-right: 10px;
+}

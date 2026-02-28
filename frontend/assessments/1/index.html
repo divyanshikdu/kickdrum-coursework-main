@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Dashboard</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <!-- top Blue Header -->
+<header class="main-header">
+  <img src="./assets/icons/kickdrum.jpg" alt="logo" class="header-logo" />
+  <span>KDU Stock Market Dashboard</span>
+</header>
+
+    <!-- Dashboard -->
+    <main class="dashboard">
+      <section class="main-section">
+        <section class="stock-row">
+          <div class="stock-box">
+            <img
+              src="./assets/icons/zomato.png"
+              alt="Zomato"
+              class="stock-icon"
+            />
+            <span>Zomato</span>
+          </div>
+
+          <div class="price-box">
+            Price: ₹<span id="stockPrice">150</span>
+            <span id="priceArrow" class="arrow">↑</span>
+          </div>
+
+          <input
+            type="number"
+            id="stockInput"
+            class="qty-input"
+            placeholder="Enter QTY"
+          />
+
+          <button id="buyBtn" class="btn btn--buy">Buy</button>
+          <button id="sellBtn" class="btn btn--sell">Sell</button>
+        </section>
+
+        <!-- chart -->
+        <section class="chart-wrapper">
+          <div class="chart" id="chartContainer"></div>
+
+          <div class="x-axis">
+            <span>0</span>
+            <span>100</span>
+            <span>200</span>
+            <span>300</span>
+            <span>400</span>
+            <span>500</span>
+          </div>
+        </section>
+      </section>
+
+      <!-- right History Section -->
+      <aside class="history">
+        <h2 class="history__title">History</h2>
+        <ul class="history__list" id="historyList"></ul>
+      </aside>
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
